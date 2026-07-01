@@ -33,6 +33,10 @@ export default function ToolkitPage() {
     window.scrollTo(0, 0);
   }, []);
 
+  const handlePayment = () => {
+    window.location.href = "https://rzp.io/rzp/6K2jnmIc";
+  };
+
   const workProjects = [
     {
       num: "01",
@@ -611,7 +615,11 @@ export default function ToolkitPage() {
                     <p className="text-[14px] font-semibold text-[#111111] leading-snug mb-1">{project.title}</p>
                     <p className="text-[13px] text-[#888888] leading-relaxed">{project.desc}</p>
                   </div>
-                  <span className={`shrink-0 text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 mt-0.5 rounded ${project.typeColor}`}>
+                  <span className={`shrink-0 text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 mt-0.5 rounded ${
+                    project.type === "Guide" ? "bg-[#EBF5EC] text-[#1F6E30]" :
+                    project.type === "Template" ? "bg-[#FFF2F2] text-[#B91C1C]" :
+                    "bg-[#EFF2FF] text-[#3348CC]"
+                  }`}>
                     {project.type}
                   </span>
                 </li>
@@ -772,15 +780,12 @@ export default function ToolkitPage() {
               <p className="text-[12px] text-[#FFAAAA]">Instant Google Drive access. No subscription. No upsell.</p>
             </div>
             
-            <br />
-            <a 
-              href="https://purchase.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-block bg-white text-[#6B0F1A] text-base font-bold px-12 py-[18px] hover:opacity-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-2xl shadow-black/22"
+            <button 
+              onClick={handlePayment}
+              className="inline-block bg-white text-[#6B0F1A] text-base font-bold px-12 py-[18px] hover:opacity-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-2xl shadow-black/22 cursor-pointer"
             >
               Get the Founder's Toolkit
-            </a>
+            </button>
             <br /><br />
             <p className="text-[12px] text-[#FFAAAA] italic">Less than one Zomato order. Zero excuses.</p>
           </motion.div>
