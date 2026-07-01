@@ -232,13 +232,13 @@ export default function ToolkitPage() {
       </nav>
 
       {/* HERO */}
-      <section className="bg-[#F9F7F4] py-20 px-6 border-b border-[#E5E0D8]">
+      <section className="bg-[#F9F7F4] py-16 md:py-20 px-5 md:px-6 border-b border-[#E5E0D8]">
         <div className="max-w-[680px] mx-auto text-center">
           <motion.span 
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-block text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B0F1A] bg-[#FFF2F2] px-3.5 py-1.5 mb-6"
+            className="inline-block text-[10px] md:text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B0F1A] bg-[#FFF2F2] px-3.5 py-1.5 mb-5 md:mb-6"
           >
             Founder's Playbook, 30 Day Series
           </motion.span>
@@ -247,7 +247,7 @@ export default function ToolkitPage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-sm md:text-base text-[#888888] font-medium mb-2.5 tracking-wide"
+            className="text-xs md:text-base text-[#888888] font-medium mb-2 md:mb-3 tracking-wide"
           >
             You built something. Now what?
           </motion.p>
@@ -256,18 +256,18 @@ export default function ToolkitPage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-3xl md:text-5xl lg:text-6xl font-normal text-[#111111] leading-[1.12] mb-5 tracking-tight font-sans"
+            className="text-[28px] sm:text-4xl md:text-5xl lg:text-6xl font-normal text-[#111111] leading-[1.2] md:leading-[1.12] mb-6 md:mb-8 tracking-tight font-sans"
             style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             Everything you need to run a startup.
-            <span className="block mt-3 md:mt-4 italic text-[#6B0F1A]">In one place.</span>
+            <span className="block mt-4 md:mt-5 italic text-[#6B0F1A]">In one place.</span>
           </motion.h1>
           
           <motion.p 
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-[15px] md:text-[17px] text-[#3D3D3D] leading-[1.75] mb-8 max-w-[540px] mx-auto"
+            className="text-[14px] sm:text-[15px] md:text-[17px] text-[#3D3D3D] leading-[1.7] md:leading-[1.75] mb-8 md:mb-10 max-w-[540px] mx-auto px-1 md:px-0"
           >
             The complete resource kit for first-time founders and early-stage builders. <strong className="text-[#111111] font-semibold">22 templates, frameworks, and guides</strong>, everything you need from launch to your first sale to your first investor meeting.
           </motion.p>
