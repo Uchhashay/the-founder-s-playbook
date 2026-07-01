@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Check, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-function AnimatedCounter({ target, suffix = "", duration = 1500 }: { target: number; suffix?: string; duration?: number }) {
+function AnimatedCounter({ target, suffix = "", duration = 8000 }: { target: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

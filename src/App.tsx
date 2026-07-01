@@ -251,10 +251,15 @@ function HomePage() {
 }
 
 export default function App() {
+  const isUchhashayDomain = typeof window !== 'undefined' && (
+    window.location.hostname.includes("uchhashay.com") || 
+    window.location.search.includes("domain=uchhashay.com")
+  );
+
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={isUchhashayDomain ? <ToolkitPage /> : <HomePage />} />
         <Route path="/blog/:id" element={<BlogPage />} />
         <Route path="/toolkit" element={<ToolkitPage />} />
         <Route path="/playbook" element={<ToolkitPage />} />
