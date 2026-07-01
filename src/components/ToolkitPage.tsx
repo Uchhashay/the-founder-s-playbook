@@ -640,12 +640,6 @@ export default function ToolkitPage() {
             </p>
                  <div className="bg-white border border-[#E5E0D8] border-l-3 border-l-[#6B0F1A] p-7 md:p-8 mt-8 hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  className="w-14 h-14 rounded-full object-cover border-2 border-white ring-2 ring-[#6B0F1A] shrink-0" 
-                  src={new URL('../assets/images/uchhashay_avatar_latest_1782879086642.jpg', import.meta.url).href} 
-                  alt="Uchhashay Ranyal, @itsranyal" 
-                  referrerPolicy="no-referrer"
-                />
                 <div>
                   <p className="text-[16px] font-bold text-[#111111] mb-0.5">Uchhashay Ranyal</p>
                   <p className="text-[12px] text-[#6B0F1A] font-semibold">@itsranyal</p>
