@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Check, X } from "lucide-react";
+import { ArrowLeft, Check, X, Plus, Minus } from "lucide-react";
 import { useEffect, useState } from "react";
 
 function AnimatedCounter({ target, suffix = "", duration = 8000 }: { target: number; suffix?: string; duration?: number }) {
@@ -32,6 +32,8 @@ export default function ToolkitPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const handlePayment = () => {
     window.location.href = "https://rzp.io/rzp/6K2jnmIc";
@@ -326,15 +328,16 @@ export default function ToolkitPage() {
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">Sound familiar?</p>
             <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-              You have a product. You have no idea what comes next.
+              You have a product.
+              <span className="block mt-3 md:mt-4 text-[#6B0F1A]">You have no idea what comes next.</span>
             </h2>
             <ul className="divide-y divide-[#E5E0D8] pt-6">
               {[
-                "You shipped something. Maybe 3 people use it. You know the product. You have no idea how to run the business around it.",
-                "Everyone tells you to \"do GTM\" or \"find your ICP\" but nobody actually explains what that means for your specific situation.",
-                "You're watching YouTube, reading Twitter threads, saving posts, and somehow you're more confused than when you started.",
-                "The real stuff is buried behind expensive courses, MBA programs, or mentors who are too busy to talk to you.",
-                "You don't know what you don't know. And that is the scariest part."
+                "You built an amazing product, but have absolutely no clue how to actually sell it.",
+                "You're drowning in generic advice like \"find your ICP\" without a single step-by-step roadmap.",
+                "You've watched a hundred YouTube videos, yet still feel completely lost on your next move.",
+                "The actual, working playbooks are hidden behind $2,000 courses or elite private networks.",
+                "You don't know what you don't know—and that invisible gap is quietly killing your startup."
               ].map((text, idx) => (
                 <li key={idx} className="group py-[18px] flex gap-4 items-start hover:pl-3 hover:bg-[#6B0F1A]/[0.02] transition-all duration-300">
                   <span className="text-[#6B0F1A] font-bold shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform duration-300">→</span>
@@ -359,17 +362,12 @@ export default function ToolkitPage() {
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">Why this exists</p>
             <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-              In 2026, anyone can build an app in a few hours. The hard part is everything after.
+              In 2026, anyone can build an app in a few hours.
+              <span className="block mt-3 md:mt-4 text-[#6B0F1A]">The hard part is everything after.</span>
             </h2>
-            <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9]">
-              AI has made building the product easy. Getting your first sale, explaining it to an investor, pricing it correctly, knowing which channel to focus on, that is where most first-time founders get stuck and stay stuck.
-            </p>
-            <div className="border-l-[3px] border-[#6B0F1A] pl-[22px] py-[18px] bg-[#F9F7F4] my-8 font-serif text-[19px] md:text-[20px] text-[#111111] leading-[1.75] md:leading-[1.8]">
+            <div className="border-l-[3px] border-[#6B0F1A] pl-[22px] py-[18px] bg-[#F9F7F4] mt-8 font-serif text-[19px] md:text-[20px] text-[#111111] leading-[1.75] md:leading-[1.8]">
               "If I was starting from zero today, this is exactly how I would start. These are my notes from YouTube rabbit holes, real courses, and time spent inside a Founder's Office working on GTM and pitch decks, compiled so you don't spend years finding them yourself."
             </div>
-            <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9]">
-              Not theory. Not an MBA syllabus. What actually matters when you are in the middle of building something real and trying to get your first customer.
-            </p>
           </motion.div>
         </div>
       </section>
@@ -641,11 +639,9 @@ export default function ToolkitPage() {
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">Who built this</p>
             <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-              Not a course creator. A founder still in the middle of it.
+              Not a course creator.
+              <span className="block mt-3 md:mt-4 text-[#6B0F1A]">A founder still in the middle of it.</span>
             </h2>
-            <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9] mt-4">
-              I am not writing this from a place of having figured it all out. I am writing this from the middle of it. Still building. Still figuring out the next move. Just doing it in public.
-            </p>
                  <div className="bg-white border border-[#E5E0D8] border-l-3 border-l-[#6B0F1A] p-7 md:p-8 mt-8 hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-4 mb-4">
                 <div>
@@ -690,7 +686,7 @@ export default function ToolkitPage() {
               Before you hesitate.
             </h2>
             
-            <div className="divide-y divide-[#E5E0D8]">
+            <div className="space-y-4">
               {[
                 {
                   q: "I haven't launched yet. Is this still for me?",
@@ -712,12 +708,44 @@ export default function ToolkitPage() {
                   q: "I already follow the series. Is there new stuff in here?",
                   a: "Yes. The resources are expanded, formatted properly, and include templates and examples that were not in the videos. Following the series gives you the concepts. The toolkit gives you the tools to actually apply them."
                 }
-              ].map((faq, idx) => (
-                <div key={idx} className="py-5 group hover:pl-3 hover:bg-[#F9F7F4] transition-all duration-300">
-                  <p className="font-serif text-[18px] md:text-[19px] font-semibold text-[#111111] mb-2 leading-relaxed group-hover:text-[#6B0F1A] transition-colors">{faq.q}</p>
-                  <p className="font-serif text-[17px] md:text-[18px] text-[#2C2C2C] leading-relaxed md:leading-loose">{faq.a}</p>
-                </div>
-              ))}
+              ].map((faq, idx) => {
+                const isOpen = openFaq === idx;
+                return (
+                  <div 
+                    key={idx} 
+                    className="border border-[#E5E0D8] rounded-xl overflow-hidden transition-all duration-300 bg-white"
+                  >
+                    <button
+                      onClick={() => setOpenFaq(isOpen ? null : idx)}
+                      className="w-full text-left py-5 px-6 flex justify-between items-center group cursor-pointer focus:outline-none select-none hover:bg-[#F9F7F4]/40 transition-colors duration-200"
+                    >
+                      <span className="font-serif text-[18px] md:text-[19px] font-semibold text-[#111111] leading-relaxed group-hover:text-[#6B0F1A] transition-colors duration-200 pr-4">
+                        {faq.q}
+                      </span>
+                      <span className={`shrink-0 flex items-center justify-center w-8 h-8 rounded-full transition-all duration-300 ${
+                        isOpen 
+                          ? "bg-[#6B0F1A] text-white rotate-180" 
+                          : "bg-[#F3F0EB] text-[#111111] group-hover:bg-[#6B0F1A] group-hover:text-white"
+                      }`}>
+                        {isOpen ? <Minus size={15} /> : <Plus size={15} />}
+                      </span>
+                    </button>
+                    
+                    <motion.div
+                      initial={false}
+                      animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
+                      transition={{ duration: 0.25, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="pb-6 pt-1 px-6 border-t border-[#E5E0D8]/50 bg-[#F9F7F4]/20">
+                        <p className="font-serif text-[16px] md:text-[17px] text-[#2C2C2C] leading-relaxed md:leading-relaxed">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </div>
+                );
+              })}
             </div>
           </motion.div>
         </div>
@@ -753,27 +781,6 @@ export default function ToolkitPage() {
               ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-4 max-w-md mx-auto py-4 px-2 bg-white/5 border border-white/10 rounded mb-8 text-white">
-              <div>
-                <p className="text-xl md:text-2xl font-semibold leading-none mb-1 text-white">
-                  <AnimatedCounter target={1700} suffix="+" />
-                </p>
-                <p className="text-[9px] md:text-[10px] text-[#F5C6C6] font-medium uppercase tracking-wider">Founders followed</p>
-              </div>
-              <div>
-                <p className="text-xl md:text-2xl font-semibold leading-none mb-1 text-white">
-                  <AnimatedCounter target={100} suffix="K+" />
-                </p>
-                <p className="text-[9px] md:text-[10px] text-[#F5C6C6] font-medium uppercase tracking-wider">Views on series</p>
-              </div>
-              <div>
-                <p className="text-xl md:text-2xl font-semibold leading-none mb-1 text-white">
-                  <AnimatedCounter target={30} />
-                </p>
-                <p className="text-[9px] md:text-[10px] text-[#F5C6C6] font-medium uppercase tracking-wider">Days, zero missed</p>
-              </div>
-            </div>
-            
             <div className="bg-black/10 border border-white/10 py-6 px-4 rounded max-w-sm mx-auto mb-8">
               <p className="text-[11px] text-[#FFAAAA] font-semibold tracking-wider uppercase mb-1.5">One-time payment</p>
               <p className="text-5xl font-extrabold text-white leading-none mb-1.5">Rs. 499</p>
