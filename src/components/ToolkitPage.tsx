@@ -642,7 +642,7 @@ export default function ToolkitPage() {
               <div className="flex items-center gap-4 mb-4">
                 <img 
                   className="w-14 h-14 rounded-full object-cover border-2 border-white ring-2 ring-[#6B0F1A] shrink-0" 
-                  src={new URL('../assets/images/uchhashay picture.jpeg', import.meta.url).href} 
+                  src={new URL('../assets/images/uchhashay.jpeg', import.meta.url).href} 
                   alt="Uchhashay Ranyal, @itsranyal" 
                   referrerPolicy="no-referrer"
                 />
