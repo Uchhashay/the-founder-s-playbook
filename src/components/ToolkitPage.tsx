@@ -325,7 +325,7 @@ export default function ToolkitPage() {
           >
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">Sound familiar?</p>
-            <h2 className="font-libre text-2xl md:text-4xl font-bold text-[#111111] leading-[1.2]">
+            <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
               You have a product. You have no idea what comes next.
             </h2>
             <ul className="divide-y divide-[#E5E0D8] pt-6">
@@ -338,7 +338,7 @@ export default function ToolkitPage() {
               ].map((text, idx) => (
                 <li key={idx} className="group py-[18px] flex gap-4 items-start hover:pl-3 hover:bg-[#6B0F1A]/[0.02] transition-all duration-300">
                   <span className="text-[#6B0F1A] font-bold shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform duration-300">→</span>
-                  <p className="text-[15px] text-[#3D3D3D] leading-[1.65]">{text}</p>
+                  <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.8] md:leading-[1.85]">{text}</p>
                 </li>
               ))}
             </ul>
@@ -358,16 +358,16 @@ export default function ToolkitPage() {
           >
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">Why this exists</p>
-            <h2 className="font-libre text-2xl md:text-4xl font-bold text-[#111111] leading-[1.2]">
+            <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
               In 2026, anyone can build an app in a few hours. The hard part is everything after.
             </h2>
-            <p className="text-[15px] text-[#3D3D3D] leading-[1.8]">
+            <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9]">
               AI has made building the product easy. Getting your first sale, explaining it to an investor, pricing it correctly, knowing which channel to focus on, that is where most first-time founders get stuck and stay stuck.
             </p>
-            <div className="border-l-[3px] border-[#6B0F1A] pl-[22px] py-[18px] bg-[#F9F7F4] my-8 font-libre text-[17px] italic text-[#111111] leading-[1.65]">
+            <div className="border-l-[3px] border-[#6B0F1A] pl-[22px] py-[18px] bg-[#F9F7F4] my-8 font-serif text-[19px] md:text-[20px] text-[#111111] leading-[1.75] md:leading-[1.8]">
               "If I was starting from zero today, this is exactly how I would start. These are my notes from YouTube rabbit holes, real courses, and time spent inside a Founder's Office working on GTM and pitch decks, compiled so you don't spend years finding them yourself."
             </div>
-            <p className="text-[15px] text-[#3D3D3D] leading-[1.8]">
+            <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9]">
               Not theory. Not an MBA syllabus. What actually matters when you are in the middle of building something real and trying to get your first customer.
             </p>
           </motion.div>
@@ -385,7 +385,7 @@ export default function ToolkitPage() {
           >
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">The shift</p>
-            <h2 className="font-libre text-2xl md:text-4xl font-bold text-[#111111] leading-[1.2] mb-8">
+            <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans mb-8" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
               From scrambled egg to organized founder.
             </h2>
             
@@ -424,10 +424,10 @@ export default function ToolkitPage() {
           <div className="max-w-[720px] mx-auto p-0 mb-12">
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">What's inside</p>
-            <h2 className="font-libre text-2xl md:text-4xl font-bold text-[#111111] leading-[1.2] mb-4">
+            <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans mb-4" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
               22 resources. Every level of the business.
             </h2>
-            <p className="text-[15px] text-[#3D3D3D] leading-[1.8]">
+            <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9]">
               From finding your first customer to calculating your exit. Templates you fill in, frameworks you apply, guides you actually read.
             </p>
           </div>
@@ -640,10 +640,10 @@ export default function ToolkitPage() {
           >
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">Who built this</p>
-            <h2 className="font-libre text-2xl md:text-4xl font-bold text-[#111111] leading-[1.2]">
+            <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
               Not a course creator. A founder still in the middle of it.
             </h2>
-            <p className="text-[15px] text-[#3D3D3D] leading-[1.8] mt-4">
+            <p className="font-serif text-[18px] md:text-[19px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9] mt-4">
               I am not writing this from a place of having figured it all out. I am writing this from the middle of it. Still building. Still figuring out the next move. Just doing it in public.
             </p>
                  <div className="bg-white border border-[#E5E0D8] border-l-3 border-l-[#6B0F1A] p-7 md:p-8 mt-8 hover:shadow-xl transition-all duration-300">
@@ -653,7 +653,7 @@ export default function ToolkitPage() {
                   <p className="text-[12px] text-[#6B0F1A] font-semibold">@itsranyal</p>
                 </div>
               </div>
-              <p className="text-[14px] text-[#3D3D3D] leading-[1.8]">
+              <p className="font-serif text-[17px] md:text-[18px] text-[#2C2C2C] leading-[1.85] md:leading-[1.9]">
                 Building a tech stack for India's transport sector. Previously founded an AI voice tech startup. Before that, worked in a Founder's Office in a Strategy and GTM role, curating client proposals, pitch decks, and go-to-market strategies from scratch. Saw what worked. Saw what killed deals before they even started.<br /><br />
                 This toolkit is compiled from Notion notes I have been keeping since 2018-19. YouTube rabbit holes, paid courses, real experiences, real founder rooms. Everything I wish someone had handed me when I was starting out.
               </p>
@@ -686,7 +686,7 @@ export default function ToolkitPage() {
           >
             <div className="h-[3px] bg-[#6B0F1A] w-12 mb-6"></div>
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#6B0F1A]">Quick answers</p>
-            <h2 className="font-libre text-2xl md:text-4xl font-bold text-[#111111] leading-[1.2] mb-8">
+            <h2 className="text-2xl md:text-4xl font-normal text-[#111111] leading-[1.2] tracking-tight font-sans mb-8" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
               Before you hesitate.
             </h2>
             
@@ -714,8 +714,8 @@ export default function ToolkitPage() {
                 }
               ].map((faq, idx) => (
                 <div key={idx} className="py-5 group hover:pl-3 hover:bg-[#F9F7F4] transition-all duration-300">
-                  <p className="text-[15px] font-semibold text-[#111111] mb-2 leading-relaxed group-hover:text-[#6B0F1A] transition-colors">{faq.q}</p>
-                  <p className="text-[14px] text-[#3D3D3D] leading-relaxed">{faq.a}</p>
+                  <p className="font-serif text-[18px] md:text-[19px] font-semibold text-[#111111] mb-2 leading-relaxed group-hover:text-[#6B0F1A] transition-colors">{faq.q}</p>
+                  <p className="font-serif text-[17px] md:text-[18px] text-[#2C2C2C] leading-relaxed md:leading-loose">{faq.a}</p>
                 </div>
               ))}
             </div>
@@ -734,10 +734,10 @@ export default function ToolkitPage() {
             className="space-y-6"
           >
             <p className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#FFAAAA]">Get instant access</p>
-            <h2 className="font-libre text-3xl md:text-5xl font-bold text-white leading-[1.15]">
+            <h2 className="text-3xl md:text-5xl font-normal text-white leading-[1.15] tracking-tight font-sans" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
               Stop being a scrambled egg.
             </h2>
-            <p className="text-[15px] text-[#F5C6C6] leading-[1.75] mb-8">
+            <p className="font-serif text-[18px] md:text-[19px] text-[#F5C6C6] leading-[1.85] md:leading-[1.9] mb-8">
               22 resources. Everything you need to go from "I built something, now what?" to actually running a business.
             </p>
             
