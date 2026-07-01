@@ -216,7 +216,7 @@ export default function ToolkitPage() {
     <div className="min-h-screen bg-[#FFFFFF] text-[#111111] font-sans antialiased selection:bg-[#6B0F1A] selection:text-white">
       
       {/* NAV */}
-      <nav className="sticky top-0 z-[100] bg-white border-b border-[#E5E0D8] px-6 py-4 flex justify-between items-center">
+      <nav className="hidden md:flex sticky top-0 z-[100] bg-white border-b border-[#E5E0D8] px-6 py-4 justify-between items-center">
         <Link to="/" className="text-[13px] font-semibold tracking-wide hover:opacity-80 transition-opacity flex items-center gap-2">
           <ArrowLeft size={14} />
           <span>Founder's Toolkit <span className="text-[#6B0F1A]">/ @itsranyal</span></span>
@@ -257,8 +257,8 @@ export default function ToolkitPage() {
             className="text-3xl md:text-5xl lg:text-6xl font-normal text-[#111111] leading-[1.12] mb-5 tracking-tight font-sans"
             style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
-            Everything you need to run a startup.<br />
-            <span className="italic text-[#6B0F1A]">In one place.</span>
+            Everything you need to run a startup.
+            <span className="block mt-3 md:mt-4 italic text-[#6B0F1A]">In one place.</span>
           </motion.h1>
           
           <motion.p 
